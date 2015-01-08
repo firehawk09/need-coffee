@@ -1,10 +1,10 @@
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
 .grid {
     font-size: 0px;
     text-align: justify;
-    position: relative;
 }
 .grid::after {
     content: "";
@@ -13,16 +13,11 @@
 }
 .grid > * {
     display: inline-block;
-    width: 33%;
+    width: 100%;
     text-align: left;
-    /* reset the text-alignment */
-
     font-size: medium;
-    /* reset the font size */
-
     vertical-align: top;
     transition: all .75s ease;
-    /* optional, but cool */
 }
 @media (max-width: 764px) {
     .grid-2-765 > * {
@@ -42,18 +37,27 @@
 form {
     color: white;
 }
+input {
+    width: 75%;
+    height: 35px;
+
+}
 textarea {
     border: 2px solid white;
     background-color: #0099FF;
-    width: 200px;
+    width: 65%;
+    min-height: 12em;
     color: white;
 }
 section {
-    margin-top: 20px;
+    padding-top: 2%;
     min-height: 500px;
+    padding-left: 5%;
+    background-color: #0099FF;
 }
 .left {
     background-color: #0099FF;
+    margin-left: 2.5%;
 }
 .middle {
     background-color: #0099FF;
@@ -64,6 +68,5 @@ section {
 .inputbox {
     border: 2px solid white;
     background-color: #0099FF;
-    width: 200px;
     color: white;
 }
