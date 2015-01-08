@@ -1,0 +1,53 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.grid {
+    font-size: 0px;
+    text-align: justify;
+    position: relative;
+}
+.grid::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+.grid > * {
+    display: inline-block;
+    width: 30%;
+    text-align: left; /* reset the text-alignment */
+    font-size: medium; /* reset the font size */
+    vertical-align: top;
+    transition: all .75s ease; /* optional, but cool */
+}
+@media (min-width: 765px){
+    .grid-2-765 > * { width: 48%; }
+}
+
+@media (min-width: 1024px){
+    .grid-3-1024 > * { width: 31.33%; }
+}
+form {
+    color: white;
+}
+.section {
+    margin-top: 20px;
+    min-height: 500px;
+}
+.left {
+    background-color:#0099FF;
+}
+.middle {
+    background-color:#0099FF;
+}
+.right {
+    background-color:#0099FF;
+}
+
+.inputbox {
+    border: 2px solid white;
+    background-color:#0099FF;
+    width: 200px;
+}
+.tallbox {
+    min-height: 12em;
+}
